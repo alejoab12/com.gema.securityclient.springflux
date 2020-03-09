@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "oauth",
+      "type": "com.gema.autentication.configoauth.OAuthConfig",
+      "sourceType": "com.gema.autentication.configoauth.OAuthConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oauth.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.gema.autentication.configoauth.OAuthConfig"
+    },
+    {
+      "name": "oauth.jwt",
+      "type": "com.gema.autentication.configoauth.JWT",
+      "sourceType": "com.gema.autentication.configoauth.OAuthConfig"
+    }
+  ],
+  "hints": []
+}
