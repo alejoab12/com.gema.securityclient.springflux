@@ -46,10 +46,6 @@ public class WebFluxJWTFilterConfig implements WebFilter {
 			isValid = existPath(oauthConfig.getJwt().getMatchersWithRole(), path, method, token, true);
 		}
 		if (isValid) {
-			exchange.getResponse().getHeaders().add("Access-Control-Allow-Origin", "*");
-			exchange.getResponse().getHeaders().add("Access-Control-Allow-Methods", "*");
-			exchange.getResponse().getHeaders().add("Access-Control-Max-Age", "600");
-			exchange.getResponse().getHeaders().add("Access-Control-Allow-Headers", "*");
 			response = chain.filter(exchange);
 		} else {
 			exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
